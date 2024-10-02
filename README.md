@@ -7,7 +7,7 @@ Patronus Software es un sistema integral de gestión de equipamiento médico dis
 ## Acceso al Sitio Web
 Para acceder al sitio web, ingresa la siguiente URL en tu navegador:
 
-[patrosoftware.com](http://patrosoftware.com)
+[patrosoftware.com](https:patronusoftware.com)
 
 ## Características
 - Registro de equipos médicos con generación de códigos QR.
