@@ -1,0 +1,9 @@
+Login Details for Jefe de servicio: 
+    Nombre: celinacarballo@gmail.com
+    Contraseña: patronus1
+Login Details for Servicio externo: 
+    Nombre: johndoe@example.com
+    Contraseña: patronus2
+Login Details for Ingeniero: 
+    Nombre: Celina Carballo
+    Contraseña: patronus3
