@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Patronus | Sitio web</title>
+
+<link href="min.css"  rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" href="images/Patronus.png">
+
+<!--CONTADOR -->
+<style>
+        .c-loader {
+            display: block;
+        }
+
+        #sound-btn {
+            opacity: 0;
+            display: none;
+        }
+
+        @media screen and (min-width: 992px) {
+            body,
+            a:hover,
+            .w-dropdown-toggle,
+            .w-dropdown-toggle:hover,
+            a:-webkit-any-link,
+            label,
+            label span:hover,
+            .w-radio-input,
+            button,
+            input[type="submit"],
+            input,
+            [link-cursor] {
+                cursor: default !important;
+            }
+        }
+        .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0; /* Ajusta el padding según tu necesidad */
+    height: auto; /* Asegúrate de que la altura se ajuste al contenido */
+        }
+
+
+        .logo-centered {
+            max-width: 600px; /* Ajusta el tamaño del logo */
+            width: 100%; /* Para que el logo sea responsive */
+            object-fit: contain;
+        }
+
+        /* Elimina los márgenes y paddings innecesarios */
+        .c-hero-v2, 
+        .c-launching {
+            margin-top: 0; /* Asegúrate de que no haya margen superior */
+            padding-top: 20px; /* Ajusta este valor si es necesario */
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="c-nav">
+        <div class="c-ttr-logo">
+            PATRONUS<br />SOFTWARE
+        </div>
+        <div id="sound-btn" audio-toggle="" class="c-audio-lottie">
+            <div class="c-sound-lottie_embed w-embed">
+                <lottie-player id="sound-lottie" loop mode="normal"
+                    src="https://cdn.prod.website-files.com/6453bf13e270828d8465254c/646df25163dae48be1b6503c_sound_lottie.json"
+                    style="width: 1.5em"></lottie-player>
+                <audio id="bg-audio" volume="0.5" loop preload="false"
+                    src="https://cdn.refokus.com/mentoring/bg-audio.mp3"></audio>
+            </div>
+            <div sound-text="" no-pointer="" class="c-audio-lottie_text cc-paused">sonido</div>
+            <div class="c-custom-code w-embed">
+                <style>
+                    .c-audio-lottie_text {
+                        user-select: none;
+                    }
+
+                    .c-audio-lottie:hover {
+                        opacity: 1 !important;
+                    }
+
+                    .c-audio-lottie:hover .c-audio-lottie_text {
+                        opacity: 1;
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+
+    <div loader="" class="c-loader">
+        <div loader-bar="" class="c-loader_bar"></div>
+        <div loader-counter="" class="c-loader_per">
+            <span loader-num="">0</span>
+            <span class="cc-text-pink">%</span>
+        </div>
+    </div>
+    <section id="root" class="c-hero-v2">
+        <div class="logo-container">
+            <img src="images/Patronus.png" alt="Patronus Logo" class="logo-centered">
+        </div>
+    </section>
+    <section class="c-launching">
+        <div class="c-container">
+            <div scrollAnimation="" class="c-button cc-secondary">
+                <div>Lanzamiento 2024</div>
+            </div>
+            <div class="c-launching_title-wrapper">
+                <h2 split-text-words="" class="c-title-3">Explora nuestro software de Ingeniería Clínica, diseñado para optimizar la gestión integral del equipamiento médico. 
+                    Únete a nosotros para llevar la gestión biomédica al siguiente nivel.</h2>
+            </div>
+        </div>
+    </section>
+
+    <!--TARJETAS-->
+
+    <section class="c-video-section">
+        <div class="c-video-section-wrapper">
+            <div class="c-container">
+                <div class="c-video-grid">
+
+                    <!--TARJETA 1-->
+
+                    <div id="w-node-_4a8573cb-a422-a2e8-b68f-72c183c849e5-b7dae8c8" class="c-video-card">
+                        <div class="c-card_frontface cc-1">
+                            <div>
+                                <div class="c-card_header">
+                                    <div class="c-ball cc-dark"></div>
+                                    <div class="c-text-16">Eficiencia</div>
+                                </div>
+                                <h4 class="c-title-40">Seguridad y calidad</h4>
+                                <div class="c-divider"></div>
+                                <div class="c-card-text-wrapper">
+                                    <p class="c-text-24">Aseguramos la seguridad del paciente y la conformidad del hospital
+                                    con las normativas de acreditación y certificación
+                                    hospitalaria.</p>
+                                </div>
+                            </div>
+                            <div class="c-card_tags">
+                                <div class="c-card_tag">Liderazgo</div>
+                                <div class="c-card_tag">Eficiencia</div>
+                                <div class="c-card_tag">Optimización</div>
+                            </div>
+                        </div>
+                        <div class="c-card_backface cc-1"></div>
+                    </div>
+
+                    <!--TARJETA 2-->
+                    <div id="w-node-_7252c122-5c90-2b47-f617-31e4ccc37705-b7dae8c8" class="c-video-card cc-2">
+                        <div class="c-card_frontface cc-2">
+                            <div>
+                                <div class="c-card_header">
+                                    <div class="c-ball"></div>
+                                    <div class="c-text-16">Potencie el desarrollo de su hospital</div>
+                                </div>
+                                <div class="c-content-wrapper cc-32">
+                                    <h4 class="c-title-100">
+                                        PATRO<br />NUS
+                                    </h4>
+                                </div>
+                                <p class="c-text-24">Con Patronus, el departamento de bioingeniería lidera la gestión
+                                integral del equipamiento hospitalario.</p>
+                            </div>
+                            <div class="c-programs-card_bottom-content">
+                                <div class="c-programs-card_texts">
+                                    <p class="c-text-18 cc-700">Notificaciones en tiempo real de solicitudes de servicio</p>
+                                </div>
+                                <div class="c-programs-card_texts">
+                                    <p class="c-text-18 cc-700">Monitoreo y atención de los llamados correctivos</p>
+                                </div>
+                                <div class="c-programs-card_texts cc-last">
+                                    <p class="c-text-18 cc-700">Control de stock</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="c-card_backface cc-2"></div>
+                    </div>
+
+                    <!--TARJETA 3-->
+
+                    <div id="w-node-_4a8573cb-a422-a2e8-b68f-72c183c849f2-b7dae8c8" class="c-video-card">
+                        <div class="c-card_frontface cc-3">
+                            <div class="c-card-balls_wrapper">
+                                <div class="c-card_header cc-balls">
+                                    <div class="c-ball"></div>
+                                    <div class="c-text-16">Vision</div>
+                                </div>
+                                <div class="c-card-balls">
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                    <div class="c-card_ball"></div>
+                                </div>
+                                <p class="c-text-24">Innovación, excelencia operativa y operaciones con el mejor software de
+                                la industria.</p>
+                            </div>
+                            <div class="c-network">software</div>
+                        </div>
+                        <div class="c-card_backface cc-3"></div>
+                    </div>
+                    <div card-light="" id="w-node-_560d4ae8-e024-7b72-005f-92b98a5a911a-b7dae8c8" class="c-cards_light">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="c-footer-wrapper">
+        <section class="c-contact">
+            <div class="c-container">
+                <div r-pipedrive="" class="c-form-block w-form">
+                    <form id="wf-form-contact-form" name="wf-form-contact-form" data-name="contact-form" action="" method="post"
+                        scrollAnimation="" class="c-contact_wrapper">
+                        <div class="c-contact_left">
+                            <h3 class="c-title-110">SOPORTE TÉCNICO</h3>
+                            <div class="c-divider cc-40"></div>
+                            <div class="c-footer_text-wrapper">
+                                <p class="c-text-18 cc-500 cc-line-height-1-2">Contáctanos para obtener más información sobre Patronus y sus
+                                    servicios.</p>
+                            </div>
+                        </div>
+                        <div class="c-contact_right">
+                            <div class="c-form_row cc-32">
+                                <!-- NOMBRE -->
+                                <input class="c-input-field w-input" link-cursor="" maxlength="256" name="user_name" data-name="user_name"
+                                    placeholder="Nombre" type="text" id="user_name" required="" />
+                                <!-- CORREO -->
+                                <input class="c-input-field w-input" link-cursor="" maxlength="256" name="user_email" data-name="user_email"
+                                    placeholder="Correo electrónico" type="email" id="user_email" required="" />
+                            </div>
+                            <!-- COMENTARIO -->
+                            <div class="c-content-wrapper cc-32">
+                                <input class="c-input-field w-input" link-cursor="" maxlength="256" name="comentario" data-name="comentario"
+                                    placeholder="Comentario" type="text" />
+                            </div>
+                            <!-- BOTÓN ENVIAR -->
+                            <div class="c-content-wrapper cc-32">
+                                <button type="submit" class="c-button">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+
+        </section>
+        <div class="c-footer">
+            <div class="c-container">
+                <div class="c-footer_links-wrapper">
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <script src="main.js"></script>
+
+   
+
+    <!-- Sound lottie -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@1.5.7/dist/lottie-player.js"></script>
+    <script>
+        let audioActive = false
+        const lottie = document.getElementById('sound-lottie')
+        const audioToggle = document.querySelector('[audio-toggle]')
+        const soundText = document.querySelector('[sound-text]')
+        const audio = document.getElementById('bg-audio')
+        lottie.pause()
+
+        audioToggle.addEventListener('click', handleAudioToggleClick)
+        function handleAudioToggleClick() {
+            if (audioActive) {
+                lottie.setLooping(false)
+                soundText.classList.add('cc-paused')
+                audioActive = false
+                audio.pause()
+                return
+            }
+
+            lottie.setLooping(true)
+            lottie.play()
+            audio.volume = 0.25
+            audio.play()
+            soundText.classList.remove('cc-paused')
+            audioActive = true
+        }
+    </script>
+
+</body>
+
+</html>

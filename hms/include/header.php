@@ -1,0 +1,97 @@
+<?php error_reporting(0); ?>
+<header class="navbar navbar-default navbar-static-top">
+	<!-- start: NAVBAR HEADER -->
+	<div class="navbar-header">
+		<a href="#" class="sidebar-mobile-toggler pull-left hidden-md hidden-lg" class="btn btn-navbar sidebar-toggle" data-toggle-class="app-slide-off" data-toggle-target="#app" data-toggle-click-outside="#sidebar">
+			<i class="ti-align-justify"></i>
+		</a>
+		<a class="navbar-brand" href="#">
+			<h2 style="display: flex; align-items: center; margin-top: 20px;">Jefe de servicio</h2>
+		</a>
+		<a href="#" class="sidebar-toggler pull-right visible-md visible-lg" data-toggle-class="app-sidebar-closed" data-toggle-target="#app">
+			<i class="ti-align-justify"></i>
+		</a>
+		<a class="pull-right menu-toggler visible-xs-block" id="menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<i class="ti-view-grid"></i>
+		</a>
+	</div>
+	<!-- end: NAVBAR HEADER -->
+	<!-- start: NAVBAR COLLAPSE -->
+	<div class="navbar-collapse collapse">
+		<ul class="nav navbar-right">
+			<!-- start: MESSAGES DROPDOWN 
+			<li style="padding-top:2% ">
+				<h2>Patronus</h2>
+			</li>-->
+
+
+			<li class="dropdown current-user">
+				<a href class="dropdown-toggle" data-toggle="dropdown">
+					<?php
+					// Consulta para obtener el nombre del usuario desde la tabla 'users'
+					$query = mysqli_query($con, "SELECT fullName FROM users WHERE id='" . $_SESSION['id'] . "'");
+					while ($row = mysqli_fetch_array($query)) {
+						$fullName = $row['fullName'];
+
+						// Dividir el nombre en partes y obtener las iniciales
+						$nameParts = explode(" ", $fullName);
+						$initials = "";
+						foreach ($nameParts as $part) {
+							$initials .= strtoupper($part[0]); // Toma la primera letra de cada parte del nombre
+						}
+
+						// Muestra las iniciales dentro de un div con clase user-icon
+						echo "<div class='user-icon'>$initials</div>";
+					}
+					?>
+
+				</a>
+				<ul class="dropdown-menu dropdown-dark">
+					<li>
+						<a href="edit-profile.php">
+							Mi Perfil
+						</a>
+					</li>
+
+					<li>
+						<a href="change-password.php">
+							Cambiar contraseña
+						</a>
+					</li>
+					<li>
+						<a href="logout.php">
+							Cerrar sesión
+						</a>
+					</li>
+				</ul>
+			</li>
+			<!-- end: USER OPTIONS DROPDOWN -->
+		</ul>
+		<!-- start: styles iniciales -->
+		<style>
+			.user-icon {
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: #3498db;
+				color: white;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 16px;
+				font-weight: bold;
+			}
+		</style>
+		<!-- end: styles iniciales -->
+		<!-- start: MENU TOGGLER FOR MOBILE DEVICES -->
+		<div class="close-handle visible-xs-block menu-toggler" data-toggle="collapse" href=".navbar-collapse">
+			<div class="arrow-left"></div>
+			<div class="arrow-right"></div>
+		</div>
+		<!-- end: MENU TOGGLER FOR MOBILE DEVICES -->
+	</div>
+
+
+	<!-- end: NAVBAR COLLAPSE -->
+</header>
